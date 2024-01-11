@@ -1,0 +1,92 @@
+services:
+  xr1:
+    image: ios-xr:xrd-control-plane
+    container_name: R1
+    xr_startup_cfg:
+    xr_boot_script:
+    xr_interfaces:
+      - Gi0/0/0/0
+      - Gi0/0/0/1
+      - Gi0/0/0/2
+      - Gi0/0/0/3
+      - Mg0/RP0/CPU0/0
+          snoop_v4: True
+          snoop_v6: True
+          snoop_v4_default_route: True
+          snoop_v6_default_route: True
+    networks:
+      mgmt:
+        ipv4_address: 172.16.0.10
+  xr2:
+    image: ios-xr:xrd-control-plane
+    container_name: R2
+    xr_startup_cfg:
+    xr_boot_script:
+    xr_interfaces:
+      - Gi0/0/0/0
+      - Gi0/0/0/1
+      - Gi0/0/0/2
+      - Gi0/0/0/3
+      - Mg0/RP0/CPU0/0
+          snoop_v4: True
+          snoop_v6: True
+          snoop_v4_default_route: True
+          snoop_v6_default_route: True
+    networks:
+      mgmt:
+        ipv4_address: 172.16.0.20
+  xr3:
+    image: ios-xr:xrd-control-plane
+    container_name: R3
+    xr_startup_cfg:
+    xr_boot_script:
+    xr_interfaces:
+      - Gi0/0/0/0
+      - Gi0/0/0/1
+      - Gi0/0/0/2
+      - Gi0/0/0/3
+      - Mg0/RP0/CPU0/0
+          snoop_v4: True
+          snoop_v6: True
+          snoop_v4_default_route: True
+          snoop_v6_default_route: True
+    networks:
+      mgmt:
+        ipv4_address: 172.16.0.30
+  xr4:
+    image: ios-xr:xrd-control-plane
+    container_name: R4
+    xr_startup_cfg:
+    xr_boot_script:
+    xr_interfaces:
+      - Gi0/0/0/0
+      - Gi0/0/0/1
+      - Gi0/0/0/2
+      - Gi0/0/0/3
+      - Mg0/RP0/CPU0/0
+          snoop_v4: True
+          snoop_v6: True
+          snoop_v4_default_route: True
+          snoop_v6_default_route: True
+    networks:
+      mgmt:
+        ipv4_address: 172.16.0.40
+
+xr_l2networks:
+  - ["xr-1:Gi0/0/0/0", "xr-2:Gi0/0/0/0"]
+  - ["xr-1:Gi0/0/0/1", "xr-4:Gi0/0/0/1"]
+  - ["xr-1:Gi0/0/0/2", "xr-3:Gi0/0/0/2"]
+  - ["xr-2:Gi0/0/0/1", "xr-3:Gi0/0/0/1"]
+  - ["xr-4:Gi0/0/0/2", "xr-2:Gi0/0/0/2"]
+  - ["xr-4:Gi0/0/0/0", "xr-3:Gi0/0/0/0"]
+
+networks:
+  mgmt:
+    ipam:
+      config:
+        - subnet: 172.16.0.0/24
+    xr_interfaces:
+      - xr-1:Mg0/RP0/CPU0/0
+      - xr-2:Mg0/RP0/CPU0/0
+      - xr-3:Mg0/RP0/CPU0/0
+      - xr-4:Mg0/RP0/CPU0/0

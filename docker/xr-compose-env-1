@@ -1,8 +1,8 @@
 services:
   xr1:
-    image: localhost:xrd-control-plane
+    image: localhost/xrd-control-plane
     container_name: R1
-    #xr_startup_cfg:
+    xr_startup_cfg: r1.conf
     #xr_boot_script:
     xr_interfaces:
       - Gi0/0/0/0
@@ -18,9 +18,9 @@ services:
       mgmt:
         ipv4_address: 172.16.0.10
   xr2:
-    image: localhost:xrd-control-plane
+    image: localhost/xrd-control-plane
     container_name: R2
-    #xr_startup_cfg:
+    xr_startup_cfg: r2.conf
     #xr_boot_script:
     xr_interfaces:
       - Gi0/0/0/0
@@ -36,9 +36,9 @@ services:
       mgmt:
         ipv4_address: 172.16.0.20
   xr3:
-    image: localhost:xrd-control-plane
+    image: localhost/xrd-control-plane
     container_name: R3
-    #xr_startup_cfg:
+    xr_startup_cfg: r3.conf
     #xr_boot_script:
     xr_interfaces:
       - Gi0/0/0/0
@@ -54,9 +54,9 @@ services:
       mgmt:
         ipv4_address: 172.16.0.30
   xr4:
-    image: localhost:xrd-control-plane
+    image: localhost/xrd-control-plane
     container_name: R4
-    #xr_startup_cfg:
+    xr_startup_cfg: r4.conf
     #xr_boot_script:
     xr_interfaces:
       - Gi0/0/0/0

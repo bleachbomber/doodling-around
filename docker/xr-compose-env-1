@@ -9,7 +9,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0
+      - Mg0/RP0/CPU0/0:
           snoop_v4: True
           snoop_v6: True
           snoop_v4_default_route: True
@@ -27,7 +27,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0
+      - Mg0/RP0/CPU0/0:
           snoop_v4: True
           snoop_v6: True
           snoop_v4_default_route: True
@@ -45,7 +45,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0
+      - Mg0/RP0/CPU0/0:
           snoop_v4: True
           snoop_v6: True
           snoop_v4_default_route: True
@@ -63,7 +63,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0
+      - Mg0/RP0/CPU0/0:
           snoop_v4: True
           snoop_v6: True
           snoop_v4_default_route: True

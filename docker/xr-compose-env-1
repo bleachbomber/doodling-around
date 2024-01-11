@@ -1,6 +1,6 @@
 services:
   xr1:
-    image: ios-xr:xrd-control-plane
+    image: localhost:xrd-control-plane
     container_name: R1
     #xr_startup_cfg:
     #xr_boot_script:
@@ -18,7 +18,7 @@ services:
       mgmt:
         ipv4_address: 172.16.0.10
   xr2:
-    image: ios-xr:xrd-control-plane
+    image: localhost:xrd-control-plane
     container_name: R2
     #xr_startup_cfg:
     #xr_boot_script:
@@ -36,7 +36,7 @@ services:
       mgmt:
         ipv4_address: 172.16.0.20
   xr3:
-    image: ios-xr:xrd-control-plane
+    image: localhost:xrd-control-plane
     container_name: R3
     #xr_startup_cfg:
     #xr_boot_script:
@@ -54,7 +54,7 @@ services:
       mgmt:
         ipv4_address: 172.16.0.30
   xr4:
-    image: ios-xr:xrd-control-plane
+    image: localhost:xrd-control-plane
     container_name: R4
     #xr_startup_cfg:
     #xr_boot_script:

@@ -9,14 +9,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0:
-          snoop_v4: True
-          snoop_v6: True
-          snoop_v4_default_route: True
-          snoop_v6_default_route: True
-    networks:
-      mgmt:
-        ipv4_address: 172.16.0.10
+      - Mg0/RP0/CPU0/0
   xr2:
     image: localhost/xrd-control-plane
     container_name: R2
@@ -27,14 +20,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0:
-          snoop_v4: True
-          snoop_v6: True
-          snoop_v4_default_route: True
-          snoop_v6_default_route: True
-    networks:
-      mgmt:
-        ipv4_address: 172.16.0.20
+      - Mg0/RP0/CPU0/0
   xr3:
     image: localhost/xrd-control-plane
     container_name: R3
@@ -45,14 +31,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0:
-          snoop_v4: True
-          snoop_v6: True
-          snoop_v4_default_route: True
-          snoop_v6_default_route: True
-    networks:
-      mgmt:
-        ipv4_address: 172.16.0.30
+      - Mg0/RP0/CPU0/0
   xr4:
     image: localhost/xrd-control-plane
     container_name: R4
@@ -63,14 +42,7 @@ services:
       - Gi0/0/0/1
       - Gi0/0/0/2
       - Gi0/0/0/3
-      - Mg0/RP0/CPU0/0:
-          snoop_v4: True
-          snoop_v6: True
-          snoop_v4_default_route: True
-          snoop_v6_default_route: True
-    networks:
-      mgmt:
-        ipv4_address: 172.16.0.40
+      - Mg0/RP0/CPU0/0
 
 xr_l2networks:
 # XR1 0 - XR2 1 (0,1)

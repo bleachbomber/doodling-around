@@ -1,9 +1,0 @@
-on: [push]
-
-jobs:
-  build:
-    name: Pull on Docker host and build the environment
-    steps:
-    - uses: actions/checkout@2
-    - name: Git pull 
-      run: echo pwd

@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Git pull 
-      run: echo pwd
+      run: pwd

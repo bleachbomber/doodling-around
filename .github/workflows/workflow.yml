@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     name: Pull on Docker host
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Git pull 
-      run: cd /home/sander/doodling-around && git pull
+      run: git -C /home/sander/doodling-around/ pull

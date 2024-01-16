@@ -2,8 +2,8 @@ on: [push]
 
 jobs:
   build:
-    name: Pull on Docker host and build the environment
+    name: Pull on Docker host
     runs-on: ubuntu-latest
     steps:
     - name: Git pull 
-      run: pwd
+      run: git -C /home/sander/doodling-around/ pull origin master

@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Git pull 
-      run: git -C /home/sander/doodling-around/ pull
+      run: cd /home/sander/doodling-around && git pull

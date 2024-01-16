@@ -5,6 +5,5 @@ jobs:
     name: Pull on Docker host and build the environment
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@2
     - name: Git pull 
       run: echo pwd

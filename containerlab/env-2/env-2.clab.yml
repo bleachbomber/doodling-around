@@ -71,7 +71,7 @@ topology:
     - endpoints: ["CE1:Eth2", "R1:Gi0-0-0-4"]
     - endpoints: ["R1:Gi0-0-0-0", "R2:Gi0-0-0-0"]
     - endpoints: ["R2:Gi0-0-0-4", "CE4:Eth2"]
-    - endpoints: ["Ce4:Eth1", "C4:Eth1"]
+    - endpoints: ["CE4:Eth1", "C4:Eth1"]
     - endpoints: ["CE2:Eth2", "R1:Gi0-0-0-5"]
     - endpoints: ["R1:Gi0-0-0-1", "PR1:Eth1"]
     - endpoints: ["PR1:Eth2", "R2:Gi0-0-0-1"]

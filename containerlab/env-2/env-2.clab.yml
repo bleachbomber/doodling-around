@@ -86,4 +86,3 @@ topology:
     - endpoints: ["R3:Gi0-0-0-0", "R4:Gi0-0-0-0"]
     - endpoints: ["R4:Gi0-0-0-3", "CE5:Eth2"]
     - endpoints: ["CE5:Eth1", "C5:Eth1"]
-# Test!

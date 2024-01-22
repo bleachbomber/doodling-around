@@ -1,0 +1,63 @@
+---
+R5:
+  hostname: 172.20.20.8
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - internet
+R6:
+  hostname: 172.20.20.10
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - internet
+PR1:
+  hostname: 172.20.20.12
+  port: 22
+  username: admin
+  password: admin
+  platform: cisco_csr1000v
+  groups:
+    - core
+    - core-routing
+R1:
+  hostname: 172.20.20.11
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - edge
+    - core-routing
+R2:
+  hostname: 172.20.20.15
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - edge
+    - core-routing
+R3:
+  hostname: 172.20.20.9
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - edge
+    - core-routing
+R4:
+  hostname: 172.20.20.14
+  port: 22
+  username: cisco
+  password: cisco123
+  platform: cisco_xrd
+  groups:
+    - edge
+    - core-routing
+...

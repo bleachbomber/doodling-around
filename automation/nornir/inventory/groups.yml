@@ -1,0 +1,17 @@
+---
+core-routing:
+  data:
+    area: 0
+    asn: 64512
+core:
+  data:
+    domain: core.lab.sanderpost.nl
+edge:
+  data:
+    domain: edge.lab.sanderpost.nl
+internet:
+  data:
+    domain: internet.lab.sanderpost.nl
+    area: 100
+    asn: 64612
+...

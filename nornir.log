@@ -1,0 +1,2949 @@
+2024-01-22 17:19:15,504 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:19:15,505 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,505 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,505 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,505 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,505 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,506 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:15,506 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,375 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:47,377 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,250 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,251 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,773 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:48,775 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,102 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,103 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:19:49,104 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'hello_world' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/start.py", line 7, in hello_world
+    return Result(
+NameError: name 'Result' is not defined
+
+2024-01-22 17:21:09,243 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:21:28,998 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:21:36,848 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:25:28,148 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:19,400 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:25,776 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:26,766 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:27,307 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:27,836 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:28,446 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:26:28,994 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 7 hosts
+2024-01-22 17:36:34,888 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:36:34,894 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:36:34,895 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:36:34,895 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_csr1000v". Is the library installed?
+
+2024-01-22 17:36:34,895 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:36:34,895 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:36:34,896 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:36:34,896 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_xrd". Is the library installed?
+
+2024-01-22 17:43:19,133 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:43:19,620 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+2024-01-22 17:43:19,620 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+2024-01-22 17:43:19,620 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+2024-01-22 17:43:19,620 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+2024-01-22 17:43:19,621 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+2024-01-22 17:43:19,624 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,618 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:44:46,985 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.8:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,985 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,986 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,986 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,986 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.11:22
+
+
+Authentication failed.
+
+2024-01-22 17:44:46,986 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1174, in establish_connection
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 202, in open
+    raise ConnectError(au_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: Authentication to device failed.
+
+Common causes of this problem are:
+1. Invalid username and password
+2. Incorrect SSH-key file
+3. Connecting to the wrong device
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+Authentication failed.
+
+2024-01-22 17:47:05,048 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:47:08,417 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:47:08,455 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:47:08,457 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:47:08,481 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:47:08,490 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:47:08,527 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:48:15,013 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:48:18,367 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:48:18,367 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:48:18,367 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:48:18,367 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:48:18,396 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 17:48:20,356 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:09,705 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:53:13,183 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 17:53:13,220 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:13,239 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:13,244 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:13,251 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:13,251 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:37,942 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:53:37,961 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:53:37,962 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:53:41,189 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:41,214 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:41,226 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:41,242 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:49,387 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:53:49,401 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:53:49,401 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:53:52,535 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:52,774 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:52,774 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:53:52,788 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:56:28,053 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:56:28,073 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:56:28,073 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:56:31,393 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:56:31,418 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:56:31,421 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:56:31,443 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 205, in open
+    self._enter_xml_mode()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 266, in _enter_xml_mode
+    raise ConnectError(
+napalm.pyIOSXR.exceptions.ConnectError: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: XML agent is not enabled. Please configure `xml agent tty iteration off`!
+
+2024-01-22 17:59:41,731 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts']} on 7 hosts
+2024-01-22 17:59:41,751 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:59:41,751 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 17:59:45,086 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 17:59:45,100 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 17:59:45,112 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 17:59:45,133 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 212, in get_facts
+    self.device.make_rpc_call(facts_rpc_request)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <PlatformInventory>
+      <RackTable>
+        <Rack>
+          <Naming>
+            <Name>0</Name>
+          </Naming>
+          <Attributes>
+            <BasicInfo/>
+          </Attributes>
+        </Rack>
+      </RackTable>
+    </PlatformInventory>
+  </Operational>
+</Get>
+        </Request>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 217, in get_facts
+    self.device.make_rpc_call(facts_rpc_request_alt)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 175, in make_rpc_call
+    result = self._execute_rpc(rpc_command)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 470, in _execute_rpc
+    raise XMLCLIError(error_msg, self)
+napalm.pyIOSXR.exceptions.XMLCLIError: 
+Original call was: <?xml version="1.0" encoding="UTF-8"?><Request MajorVersion="1" MinorVersion="0">
+<Get>
+  <Operational>
+    <SystemTime/>
+    <Inventory>
+      <Entities>
+        <Entity>
+          <Naming>
+            <Name>Rack 0</Name>
+          </Naming>
+          <Attributes>
+            <InvBasicBag></InvBasicBag>
+          </Attributes>
+        </Entity>
+      </Entities>
+    </Inventory>
+  </Operational>
+</Get>
+</Request>
+
+2024-01-22 18:12:17,425 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['config']} on 7 hosts
+2024-01-22 18:12:17,446 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 18:12:17,446 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 83, in open
+    self.device = manager.connect(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 187, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/ncclient/manager.py", line 139, in connect_ssh
+    session.connect(*args, **kwds)
+TypeError: connect() got an unexpected keyword argument 'ssh_config_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr_netconf/iosxr_netconf.py", line 97, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: connect() got an unexpected keyword argument 'ssh_config_file'
+
+2024-01-22 18:13:13,211 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['is_alive']} on 7 hosts
+2024-01-22 18:13:14,129 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,381 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,481 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,481 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,505 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,505 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:16,511 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSXRDriver' object has no attribute 'get_is_alive'
+
+2024-01-22 18:13:55,248 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['interfaces']} on 7 hosts

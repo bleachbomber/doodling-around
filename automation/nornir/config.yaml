@@ -2,9 +2,9 @@
 inventory:
   plugin: SimpleInventory
   options:
-    host_file: "inventory/hosts.yml"
-    group_file: "inventory/groups.yaml"
-    defaults_file: "inventory/defaults/yaml"
+    host_file: "automation/nornir/inventory/hosts.yaml"
+    group_file: "automation/nornir/inventory/groups.yaml"
+    defaults_file: "automation/nornir/inventory/defaults.yaml"
 runner:
   plugin: threaded
   options:

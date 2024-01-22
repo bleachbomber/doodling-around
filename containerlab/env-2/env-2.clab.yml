@@ -62,7 +62,7 @@ topology:
 
   links:
     - endpoints: ["E1:Eth1", "R100:Eth1"]
-    - endpoints: ["R100:Eth3", "R5:Gi0-0-0-1"]
+    - endpoints: ["R100:Eth2", "R5:Gi0-0-0-1"]
     - endpoints: ["R100:Eth3", "R6:Gi0-0-0-1"]
     - endpoints: ["R5:Gi0-0-0-0", "R6:Gi0-0-0-0"]
     - endpoints: ["R5:Gi0-0-0-2", "R1:Gi0-0-0-3"]

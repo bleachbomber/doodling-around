@@ -7,22 +7,22 @@ topology:
       image: vrnetlab/vr-csr:17.03.02
     R1:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     R2:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     R3:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     R4:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     R5:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     R6:
       kind: cisco_xrd
-      image: localhost/xrd-control-plane:7.10.2
+      image: localhost/xrd-control-plane:latest
     PR1:
       kind: cisco_csr1000v
       image: vrnetlab/vr-csr:17.03.02

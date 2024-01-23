@@ -1,0 +1,15 @@
+{% for interface in host.data.interfaces %}
+interface {{ interface }}
+{% if host.data.interfaces[interface].description is defined %}
+ description {{ host.data.interfaces[interface].description }}
+{% endif %}
+{% if host.data.interfaces[interface].ip_address is defined %}
+ ip address {{ host.data.interfaces[interface].ip_address | ip_address }} {{ host.data.interfaces[interface].ip_address | ip_netmask }} 
+{% endif %}
+{% if host.data.interfaces[interface].ipv6_address is defined %}
+ ipv6 address {{ host.data.interfaces[interface].ip_address }}
+{% endif %}
+ lldp transmit
+ lldp receive
+ no shutdown
+{% endfor %}

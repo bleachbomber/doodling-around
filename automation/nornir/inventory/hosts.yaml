@@ -1,12 +1,20 @@
 ---
 R5:
-  hostname: 172.20.20.8
+  hostname: 172.20.20.6
   port: 22
   username: clab
   password: clab@123
   platform: iosxr
   groups:
     - internet
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.4/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.1/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.6/31
 R6:
   hostname: 172.20.20.10
   port: 22
@@ -15,8 +23,16 @@ R6:
   platform: iosxr
   groups:
     - internet
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.5/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.3/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.8/31
 PR1:
-  hostname: 172.20.20.12
+  hostname: 172.20.20.19
   port: 22
   username: admin
   password: admin
@@ -24,16 +40,17 @@ PR1:
   groups:
     - core
     - core-routing
+  data:
+    interfaces:
+      Ge1:
+        ip_address: 192.168.10.13/31
+      Ge2:
+        ip_address: 192.168.10.14/31
+      Ge3:
+        ip_address: 192.168.10.20/31
+      Ge4:
+        ip_address: 192.168.10.22/31
 R1:
-  hostname: 172.20.20.11
-  port: 22
-  username: clab
-  password: clab@123
-  platform: iosxr
-  groups:
-    - edge
-    - core-routing
-R2:
   hostname: 172.20.20.15
   port: 22
   username: clab
@@ -42,7 +59,17 @@ R2:
   groups:
     - edge
     - core-routing
-R3:
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.10/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.12/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.16/31
+      Gi0/0/0/3:
+        ip_address: 192.168.10.7/31
+R2:
   hostname: 172.20.20.9
   port: 22
   username: clab
@@ -51,7 +78,17 @@ R3:
   groups:
     - edge
     - core-routing
-R4:
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.11/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.15/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.18/31
+      Gi0/0/0/3:
+        ip_address: 192.168.10.9/31
+R3:
   hostname: 172.20.20.14
   port: 22
   username: clab
@@ -60,4 +97,29 @@ R4:
   groups:
     - edge
     - core-routing
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.24/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.21/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.17/31
+R4:
+  hostname: 172.20.20.16
+  port: 22
+  username: clab
+  password: clab@123
+  platform: iosxr
+  groups:
+    - edge
+    - core-routing
+  data:
+    interfaces:
+      Gi0/0/0/0: 
+        ip_address: 192.168.10.25/31
+      Gi0/0/0/1:
+        ip_address: 192.168.10.23/31
+      Gi0/0/0/2:
+        ip_address: 192.168.10.19/31
 ...

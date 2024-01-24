@@ -6,79 +6,79 @@ topology:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.100
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 30
     R1:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.15
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R2:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.9
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R3:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.14
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R4:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.16
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R5:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.6
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R6:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.10
       image: localhost/xrd-control-plane:latest
-      startup-config: ../../automations/nornir/configurations/xrd.cfg
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     PR1:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.19
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 60
     CE1:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.101
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 90
     CE2:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.102
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 120
     CE3:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.103
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 150
     CE4:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.104
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 180
     CE5:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.105
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automations/nornir/configurations/csr1000v.cfg
+      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 210
     C1:

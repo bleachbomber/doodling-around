@@ -5,8 +5,10 @@ from nornir_napalm.plugins.tasks import napalm_configure
 from jinja2 import FileSystemLoader, Environment
 from jinja2.filters import FILTERS
 from j2ipaddr import filters
+from start import Inventory
 
-nr = InitNornir(config_file='automation/nornir/config.yaml')
+#nr = InitNornir(config_file='automation/nornir/config.yaml')
+nr = Inventory().return_init()
 
 FILTERS.update(filters.load_all())
 

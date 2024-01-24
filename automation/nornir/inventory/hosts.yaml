@@ -34,8 +34,6 @@ R6:
 PR1:
   hostname: 172.20.20.19
   port: 22
-  username: admin
-  password: admin
   platform: ios
   groups:
     - core

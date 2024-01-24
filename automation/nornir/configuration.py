@@ -23,7 +23,7 @@ def generate_config_and_push(task):
                                path='automation/nornir/templates/',
                                jinja_env=env).result
     configure_devices = task.run(task=napalm_configure, 
-                                 dry_run=True, 
+                                 dry_run=False, 
                                  configuration=rendered_config)
 
 results = nr.run(task=generate_config_and_push)

@@ -43,7 +43,6 @@ topology:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.19
       image: vrnetlab/vr-csr:17.03.02
-      startup-config: ../../automation/nornir/configurations/csr1000v.cfg
       env: 
         BOOT_DELAY: 60
     CE1:

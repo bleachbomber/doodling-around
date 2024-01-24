@@ -3,16 +3,12 @@ from nornir_utils.plugins.functions import print_result
 from nornir.core.filter import F
 from nornir_napalm.plugins.tasks import napalm_get
 from nornir.core.task import Task, Result
-#from nornir.core.plugins.inventory import TransformFunctionRegister
-#from transforming_inventory_data.helpers import update_credentials
-import getpass
 
-#TransformFunctionRegister.register('update_credentials', update_credentials)
+import getpass
 
 class Inventory():
     def __init__(self):
         self.nr = InitNornir(config_file="automation/nornir/config.yaml")
-        self.set_credentials()
 
     def return_init(self):
         return self.nr
@@ -38,11 +34,7 @@ class Inventory():
         return uniques
 
     def set_credentials(self):
-        x = y = 0
         for platform in self.get_platforms():
-            print(x)
-            x += 1
-            
             print(f'{"Enter credentials for " + platform + " ... "}')
             username = self.get_username()
             password = self.get_password()
@@ -52,5 +44,3 @@ class Inventory():
                 self.nr.inventory.hosts[key].username = username
                 self.nr.inventory.hosts[key].password = password
 
-
-inv = Inventory()

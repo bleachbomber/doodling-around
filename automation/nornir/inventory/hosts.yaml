@@ -34,20 +34,26 @@ R6:
 PR1:
   hostname: 172.20.20.19
   port: 22
+  username: admin
+  password: admin
   platform: ios
   groups:
     - core
     - core-routing
   data:
     interfaces:
-      Ge1:
+      GigabitEthernet1:
         ip_address: 192.168.10.13/31
-      Ge2:
+      GigabitEthernet2:
         ip_address: 192.168.10.14/31
-      Ge3:
+      GigabitEthernet3:
         ip_address: 192.168.10.20/31
-      Ge4:
+      GigabitEthernet4:
         ip_address: 192.168.10.22/31
+  connection_options:
+    netmiko:
+      extras:
+          conn_timeout: 1
 R1:
   hostname: 172.20.20.15
   port: 22

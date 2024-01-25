@@ -10808,3 +10808,1189 @@ Traceback (most recent call last):
 nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
 
 
+2024-01-25 00:25:36,830 -  nornir.core -     INFO -        run() - Running task 'generate_config_and_push' with args {} on 7 hosts
+2024-01-25 00:25:52,043 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 48, in napalm_configure
+    device.commit_config(**commit_kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 595, in commit_config
+    output = self._commit_handler(cmd)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 469, in wrapper
+    return f(self, *args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 499, in _commit_handler
+    self.device.set_base_prompt()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_ios.py", line 35, in set_base_prompt
+    base_prompt = super().set_base_prompt(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1396, in set_base_prompt
+    prompt = self.find_prompt(delay_factor=delay_factor, pattern=pattern)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1427, in find_prompt
+    prompt = self.read_until_pattern(pattern=pattern)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 746, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: '(\\#|>)' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-01-25 00:25:52,043 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:27,310 -  nornir.core -     INFO -        run() - Running task 'generate_config_and_push' with args {} on 7 hosts
+2024-01-25 01:15:29,608 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 36, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 319, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 273, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 735, in _scp_file
+    return self._xfer_file(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 804, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2024-01-25 01:15:29,608 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,382 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,383 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+2024-01-25 01:15:37,384 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,384 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,384 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:15:37,384 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:21,992 -  nornir.core -     INFO -        run() - Running task 'generate_config_and_push' with args {} on 7 hosts
+2024-01-25 01:16:32,064 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.10:22
+
+
+
+2024-01-25 01:16:32,065 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.16:22
+
+
+
+2024-01-25 01:16:32,065 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.6:22
+
+
+
+2024-01-25 01:16:32,065 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.9:22
+
+
+
+2024-01-25 01:16:32,065 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.15:22
+
+
+
+2024-01-25 01:16:32,065 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1137, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/paramiko/client.py", line 386, in connect
+    sock.connect(addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 186, in open
+    self.device = ConnectHandler(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/ssh_dispatcher.py", line 399, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 488, in __init__
+    self._open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 493, in _open
+    self.establish_connection()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_xr.py", line 11, in establish_connection
+    super().establish_connection(width=width, height=height)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1159, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 79, in open
+    self.device.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/pyIOSXR/iosxr.py", line 199, in open
+    raise ConnectError(t_err.args[0])
+napalm.pyIOSXR.exceptions.ConnectError: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 31, in napalm_configure
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/iosxr/iosxr.py", line 82, in open
+    raise ConnectionException(conn_err.args[0])
+napalm.base.exceptions.ConnectionException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_xr 172.20.20.14:22
+
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R6': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R4': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:32,066 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+
+2024-01-25 01:16:36,655 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 48, in napalm_configure
+    device.commit_config(**commit_kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 595, in commit_config
+    output = self._commit_handler(cmd)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 469, in wrapper
+    return f(self, *args, **kwargs)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/napalm/ios/ios.py", line 499, in _commit_handler
+    self.device.set_base_prompt()
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/cisco/cisco_ios.py", line 35, in set_base_prompt
+    base_prompt = super().set_base_prompt(
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1396, in set_base_prompt
+    prompt = self.find_prompt(delay_factor=delay_factor, pattern=pattern)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 1427, in find_prompt
+    prompt = self.read_until_pattern(pattern=pattern)
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/netmiko/base_connection.py", line 746, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: '(\\#|>)' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-01-25 01:16:36,656 - nornir.core.task -    ERROR -      start() - Host 'PR1': task 'generate_config_and_push' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/Users/sander/Documents/Git/doodling-around/automation/nornir/configuration.py", line 25, in generate_config_and_push
+    configure_devices = task.run(task=napalm_configure,
+  File "/Users/sander/Library/Python/3.9/lib/python/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_configure (failed)
+
+

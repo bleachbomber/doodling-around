@@ -42,7 +42,6 @@ topology:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.101
       image: vrnetlab/vr-csr:17.03.02
-      g
       env: 
         BOOT_DELAY: 90
     CE2:

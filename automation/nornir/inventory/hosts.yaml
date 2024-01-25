@@ -42,13 +42,13 @@ PR1:
     - core-routing
   data:
     interfaces:
-      GigabitEthernet1:
-        ip_address: 192.168.10.13/31
       GigabitEthernet2:
-        ip_address: 192.168.10.14/31
+        ip_address: 192.168.10.13/31
       GigabitEthernet3:
-        ip_address: 192.168.10.20/31
+        ip_address: 192.168.10.14/31
       GigabitEthernet4:
+        ip_address: 192.168.10.20/31
+      GigabitEthernet5:
         ip_address: 192.168.10.22/31
   connection_options:
     netmiko:

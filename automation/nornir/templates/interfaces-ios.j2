@@ -9,7 +9,10 @@ interface {{ interface }}
 {% if host.data.interfaces[interface].ipv6_address is defined %}
  ipv6 address {{ host.data.interfaces[interface].ip_address }}
 {% endif %}
+{% if host.data.interfaces[interface].type == 'p2p' %}
  lldp transmit
  lldp receive
  no shutdown
+{% endif %}
+!
 {% endfor %}

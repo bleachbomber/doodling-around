@@ -9,6 +9,18 @@ R5:
   groups:
     - internet
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 56
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 56
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 56
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -39,6 +51,18 @@ R6:
   groups:
     - internet
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 56
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 56
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 56
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -70,6 +94,24 @@ PR1:
     - core
     - core-routing
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 0
+            network-type: loopback
+          GigabitEthernet2:
+            area: 0
+            network-type: point-to-point
+          GigabitEthernet3:
+            area: 0
+            network-type: point-to-point
+          GigabitEthernet4:
+            area: 0
+            network-type: point-to-point
+          GigabitEthernet5:
+            area: 0
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -110,6 +152,24 @@ R1:
     - edge
     - core-routing
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 0
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/1:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/3:
+            area: 56
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -146,6 +206,24 @@ R2:
     - edge
     - core-routing
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 0
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/1:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/3:
+            area: 56
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -182,6 +260,21 @@ R3:
     - edge
     - core-routing
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 0
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/1:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 0
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback
@@ -212,6 +305,21 @@ R4:
     - edge
     - core-routing
   data:
+    routing:
+      ospf:
+        interfaces:
+          Loopback0:
+            area: 0
+            network-type: loopback
+          Gi0/0/0/0:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/1:
+            area: 0
+            network-type: point-to-point
+          Gi0/0/0/2:
+            area: 0
+            network-type: point-to-point
     interfaces:
       Loopback0:
         type: loopback

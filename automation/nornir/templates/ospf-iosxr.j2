@@ -1,0 +1,23 @@
+{% for interface in host.data.routing.ospf.interfaces %}
+{% if loop.index0 == 0 %}
+router ospf {{ host.data.routing.ospf.interfaces[interface].area }}
+ area {{ host.data.routing.ospf.interfaces[interface].area }}
+{% elif loop.index0 > 0 and host.data.routing.ospf.interfaces[loop.previtem].area != host.data.routing.ospf.interfaces[interface].area %}
+router ospf {{ host.data.routing.ospf.interfaces[interface].area }}
+ area {{ host.data.routing.ospf.interfaces[interface].area }}
+{% endif %}
+  interface {{ interface }}
+{% if host.data.routing.ospf.interfaces[interface] == 'loopback' %}
+   loopback stub-network enable
+{% elif host.data.routing.ospf.interfaces[interface] == 'point-to-point' %}
+   network point-to-point
+{% endif %}
+  !
+{% if not loop.last and host.data.routing.ospf.interfaces[interface].area != host.data.routing.ospf.interfaces[loop.nextitem].area %}
+ !
+!
+{% elif loop.last %}
+ !
+!
+{% endif %}
+{% endfor %}

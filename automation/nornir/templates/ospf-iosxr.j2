@@ -1,15 +1,15 @@
+router ospf 1
+router-id {{ host.data.interfaces['Loopback0'].ip_address | ip_address }}
 {% for interface in host.data.routing.ospf.interfaces %}
 {% if loop.index0 == 0 %}
-router ospf {{ host.data.routing.ospf.interfaces[interface].area }}
  area {{ host.data.routing.ospf.interfaces[interface].area }}
 {% elif loop.index0 > 0 and host.data.routing.ospf.interfaces[loop.previtem].area != host.data.routing.ospf.interfaces[interface].area %}
-router ospf {{ host.data.routing.ospf.interfaces[interface].area }}
  area {{ host.data.routing.ospf.interfaces[interface].area }}
 {% endif %}
   interface {{ interface }}
-{% if host.data.routing.ospf.interfaces[interface] == 'loopback' %}
+{% if host.data.routing.ospf.interfaces[interface].network_type == 'loopback' %}
    loopback stub-network enable
-{% elif host.data.routing.ospf.interfaces[interface] == 'point-to-point' %}
+{% elif host.data.routing.ospf.interfaces[interface].network_type == 'point-to-point' %}
    network point-to-point
 {% endif %}
   !

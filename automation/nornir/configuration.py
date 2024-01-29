@@ -19,11 +19,11 @@ env = Environment(loader=loader, trim_blocks=True, lstrip_blocks=True)
 def generate_config_and_push(task):
     """Render unique device configuration and push to device"""
     rendered_config = task.run(task=template_file, 
-                               template=f'{"ospf-" + task.host.platform + ".j2"}', 
+                               template=f'{"mpls-" + task.host.platform + ".j2"}', 
                                path='automation/nornir/templates/',
                                jinja_env=env).result
     configure_devices = task.run(task=napalm_configure, 
-                                 dry_run=True, 
+                                 dry_run=False, 
                                  configuration=rendered_config)
 
 results = nr.run(task=generate_config_and_push)

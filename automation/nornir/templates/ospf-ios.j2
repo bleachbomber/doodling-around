@@ -1,0 +1,10 @@
+router ospf 1
+ router-id {{ host.data.interfaces['Loopback0'].ip_address | ip_address }}
+{% for interface in host.data.routing.ospf.interfaces %}
+interface {{ interface }}
+ ip ospf 1 area {{ host.data.routing.ospf.interfaces[interface].area }}
+{% if host.data.routing.ospf.interfaces[interface].network_type == 'point-to-point' %}
+ ip ospf network point-to-point
+!
+{% endif %}
+{% endfor %}

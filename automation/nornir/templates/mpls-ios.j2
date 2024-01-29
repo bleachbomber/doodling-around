@@ -1,0 +1,11 @@
+mpls oam
+mpls ldp router-id loopback 0
+!
+{% for interface in host.data.interfaces %}
+{% if host.data.interfaces[interface].type == 'core' %}
+interface {{ interface }}
+ mpls ip
+ mpls label protocol ldp
+!
+{% endif %}
+{% endfor %}

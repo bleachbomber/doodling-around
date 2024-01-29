@@ -1,0 +1,27 @@
+mpls oam
+!
+mpls ldp
+ router-id {{ host.data.interfaces['Loopback0'].ip_address | ip_address }}
+ address-family ipv4
+  label
+   local
+    advertise
+{% for interface in host.data.interfaces %}
+{% if host.data.interfaces[interface].type == 'core' %}
+     interface {{ interface }}
+{% endif %}
+{% endfor %}
+    !
+   !
+  !
+ !
+{% for interface in host.data.interfaces %}
+{% if host.data.interfaces[interface].type == 'core' %}
+ interface {{ interface }}
+{% if not loop.last %} 
+ !
+{% endif %}
+{% endif %}
+{% endfor %}
+ !
+!

@@ -12,26 +12,32 @@ topology:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.15
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R2:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.9
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R3:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.14
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R4:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.16
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R5:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.6
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     R6:
       kind: cisco_xrd
       mgmt-ipv4: 172.20.20.10
       image: localhost/xrd-control-plane:latest
+      startup-config: ../../automation/nornir/configurations/xrd.cfg
     PR1:
       kind: cisco_csr1000v
       mgmt-ipv4: 172.20.20.19

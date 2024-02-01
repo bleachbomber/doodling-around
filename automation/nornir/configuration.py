@@ -16,10 +16,10 @@ loader = FileSystemLoader('.')
 env = Environment(loader=loader, trim_blocks=True, lstrip_blocks=True)
 
 # Courtesy of https://campusnetworkengineering.com/posts/practical-automation-series-part-2/
-def generate_config_and_push(task):
+def generate_config_and_push(task, part):
     """Render unique device configuration and push to device"""
     rendered_config = task.run(task=template_file, 
-                               template=f'{"interfaces-" + task.host.platform + ".j2"}', 
+                               template=f'{part + "-" + task.host.platform + ".j2"}', 
                                path='automation/nornir/templates/',
                                jinja_env=env).result
     configure_devices = task.run(task=napalm_configure, 
@@ -31,6 +31,11 @@ def get_current_config(task):
                                getters=['config'],
                                retrieve='all')
     
-
-results = nr.run(task=get_current_config)
-print(results.keys())
+# To fix sections without duplicate code 
+# Maybe work on config replace (makes config clean?!)
+results = nr.run(task=generate_config_and_push, part='interfaces')
+print_result(results)
+results = nr.run(task=generate_config_and_push, part='ospf')
+print_result(results)
+results = nr.run(task=generate_config_and_push, part='mpls')
+print_result(results)

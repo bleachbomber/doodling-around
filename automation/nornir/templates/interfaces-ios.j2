@@ -13,7 +13,7 @@ interface {{ interface }}
 {% if host.data.interfaces[interface].type == 'core' %}
  lldp transmit
  lldp receive
- no shutdown
 {% endif %}
+ no shutdown
 !
 {% endfor %}

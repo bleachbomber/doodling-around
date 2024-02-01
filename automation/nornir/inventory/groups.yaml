@@ -12,4 +12,7 @@ internet:
   data:
     domain: internet.lab.sanderpost.nl
     asn: 64568
+customer:
+  data:
+    domain: customer.lab.sanderpost.nl
 ...

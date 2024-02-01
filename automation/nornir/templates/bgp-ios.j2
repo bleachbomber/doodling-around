@@ -1,0 +1,11 @@
+router bgp {{  }}
+ bgp router-id {{  }}
+ neighbor core peer-group
+ neighbor core remote-as 64512
+ neighbor core capability <  > 
+ !
+ address-family ipv4 unicast
+  redistribute <  >
+  neighbor core route-map <  >
+  neighbor core route-map <  >
+ exit-address-family

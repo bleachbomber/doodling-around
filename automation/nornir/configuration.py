@@ -1,7 +1,7 @@
 from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result
 from nornir_jinja2.plugins.tasks import template_file
-from nornir_napalm.plugins.tasks import napalm_configure
+from nornir_napalm.plugins.tasks import napalm_configure, napalm_get
 from jinja2 import FileSystemLoader, Environment
 from jinja2.filters import FILTERS
 from j2ipaddr import filters
@@ -19,12 +19,18 @@ env = Environment(loader=loader, trim_blocks=True, lstrip_blocks=True)
 def generate_config_and_push(task):
     """Render unique device configuration and push to device"""
     rendered_config = task.run(task=template_file, 
-                               template=f'{"mpls-" + task.host.platform + ".j2"}', 
+                               template=f'{"interfaces-" + task.host.platform + ".j2"}', 
                                path='automation/nornir/templates/',
                                jinja_env=env).result
     configure_devices = task.run(task=napalm_configure, 
                                  dry_run=False, 
                                  configuration=rendered_config)
+    
+def get_current_config(task):
+    current_config = task.run(task=napalm_get,
+                               getters=['config'],
+                               retrieve='all')
+    
 
-results = nr.run(task=generate_config_and_push)
-print_result(results)
+results = nr.run(task=get_current_config)
+print(results.keys())

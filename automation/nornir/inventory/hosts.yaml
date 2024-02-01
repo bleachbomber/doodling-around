@@ -34,8 +34,8 @@ R5:
       Gi0/0/0/1:
         type: edge
         host: R100
-        description: 'Link: Gi3:r100.lab.sanderpost.nl'
-        ip_address: 192.168.10.1/31
+        description: 'Edge: Gi3:r100.lab.sanderpost.nl'
+        ip_address: 172.16.0.21/31
       Gi0/0/0/2:
         type: core
         host: R1
@@ -60,7 +60,7 @@ R6:
           Gi0/0/0/0:
             area: 56
             network_type: point-to-point
-          Gi0/0/0/2:
+          Gi0/0/0/6:
             area: 56
             network_type: point-to-point
     interfaces:
@@ -76,9 +76,9 @@ R6:
       Gi0/0/0/1:
         type: edge
         host: R100
-        description: 'Link: Gi4:r100.lab.sanderpost.nl'
-        ip_address: 192.168.10.3/31
-      Gi0/0/0/2:
+        description: 'Edge: Gi4:r100.lab.sanderpost.nl'
+        ip_address: 172.16.0.23/31
+      Gi0/0/0/6:
         type: core
         host: R2
         description: 'Link: Gi0/0/0/3:r2.lab.sanderpost.nl'
@@ -195,6 +195,16 @@ R1:
         host: r5
         description: 'Link: Gi0/0/0/2:r5.lab.sanderpost.nl'
         ip_address: 192.168.10.7/31
+      Gi0/0/0/4:
+        type: edge
+        host: CE1
+        description: 'Edge: Gi3:ce1.lab.sanderpost.nl'
+        ip_address: 172.16.0.0/31
+      Gi0/0/0/5:
+        type: edge
+        host: CE2
+        description: 'Edge: Gi3:ce2.lab.sanderpost.nl'
+        ip_address: 172.16.0.5/31
 R2:
   id: 4
   hostname: 172.20.20.9
@@ -249,6 +259,11 @@ R2:
         host: r6
         description: 'Link: Gi0/0/0/2:r6.lab.sanderpost.nl'
         ip_address: 192.168.10.9/31
+      Gi0/0/0/4:
+        type: edge
+        host: CE4
+        description: 'Edge: Gi3:ce4.lab.sanderpost.nl'
+        ip_address: 172.16.0.2/31
 R3:
   id: 5
   hostname: 172.20.20.14
@@ -295,6 +310,16 @@ R3:
         host: r1
         description: 'Link: Gi0/0/0/2:r1.lab.sanderpost.nl'
         ip_address: 192.168.10.17/31
+      Gi0/0/0/3:
+        type: edge
+        host: CE3
+        description: 'Edge: Gi3:ce3.lab.sanderpost.nl'
+        ip_address: 172.16.0.9/31
+      Gi0/0/0/4:
+        type: edge
+        host: CE4
+        description: 'Edge: Gi4:ce2.lab.sanderpost.nl'
+        ip_address: 172.16.0.7/31
 R4:
   hostname: 172.20.20.16
   port: 22
@@ -340,4 +365,139 @@ R4:
         host: r2
         description: 'Link: Gi0/0/0/2:r2.lab.sanderpost.nl'
         ip_address: 192.168.10.19/31
+      Gi0/0/0/3:
+        type: edge
+        host: CE5
+        description: 'Edge: Gi3:ce5.lab.sanderpost.nl'
+        ip_address: 172.16.0.10/31
+R100:
+  hostname: 172.20.20.100
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: inside
+        host: E1
+        description: 'Inside: Eth1:e1.lab.sanderpost.nl'
+        ip_address: 10.100.0.1/24
+      GigabitEthernet3:
+        type: outside
+        host: R5
+        description: 'Outside: Gi0/0/0/1:r5.lab.sanderpost.nl'
+        ip_address: 172.16.0.20/31
+      GigabitEthernet4:
+        type: outside
+        host: R6
+        description: 'Outside Gi0/0/0/1:r6.lab.sanderpost.nl'
+        ip_address: 172.16.0.22/31
+CE1:
+  hostname: 172.20.20.101
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: inside
+        host: C1
+        description: 'Inside Eth1:c1.lab.sanderpost.nl' 
+        ip_address: 10.1.0.1/24
+      GigabitEthernet3:
+        type: outside
+        host: R1
+        description: 'Outside: Gi0/0/0/4:r1.lab.sanderpost.nl'
+        ip_address: 172.16.0.1/31
+CE2:
+  hostname: 172.20.20.102
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: inside
+        host: C2
+        description: 'Inside: Eth1:c2.lab.sanderpost.nl' 
+        ip_address: 10.2.0.1/24
+      GigabitEthernet3:
+        type: outside
+        host: R1
+        description: 'Outside: Gi0/0/0/5:r1.lab.sanderpost.nl'
+        ip_address: 172.16.0.4/31
+      GigabitEthernet4:
+        type: outside
+        host: R3
+        description: 'Outside: r3.Gi0/0/0/4.lab.sanderpost.nl'
+        ip_address: 172.16.0.6/31
+CE3:
+  hostname: 172.20.20.103
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: inside
+        host: C3
+        description: 'Inside: Eth1:c3.lab.sanderpost.nl' 
+        ip_address: 10.3.0.1/24
+      GigabitEthernet3:
+        type: outside
+        host: R3
+        description: 'Outside: Gi0/0/0/3:r3.lab.sanderpost.nl'
+        ip_address: 172.16.0.8/31
+CE4:
+  hostname: 172.20.20.104
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: outside
+        host: C4
+        description: 'Inside: Eth1.c4.lab.sanderpost.nl' 
+        ip_address: 10.4.0.1/24
+      GigabitEthernet3:
+        type: inside
+        host: R2
+        description: 'Outside: Gi0/0/0/4:r2.lab.sanderpost.nl'
+        ip_address: 172.16.0.3/31
+CE5:
+  hostname: 172.20.20.105
+  port: 22
+  username: admin
+  password: admin
+  platform: ios
+  groups:
+    - customer
+  data:
+    interfaces:
+      GigabitEthernet2:
+        type: outside
+        host: C5
+        description: 'Inside: Eth1.c5.lab.sanderpost.nl'
+        ip_address: 10.5.0.1/24
+      GigabitEthernet3:
+        type: inside
+        host: R4
+        description: 'Outside: Gi0/0/0/3.r4.lab.sanderpost.nl'
+        ip_address: 172.16.0.11/31
 ...

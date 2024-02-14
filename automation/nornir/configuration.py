@@ -2,7 +2,8 @@ from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result
 from nornir_jinja2.plugins.tasks import template_file
 from nornir_napalm.plugins.tasks import napalm_configure, napalm_get
-from jinja2 import FileSystemLoader, Environment
+from nornir.core.filter import F
+from jinja2 import FileSystemLoader, Environment, PackageLoader, meta
 from jinja2.filters import FILTERS
 from j2ipaddr import filters
 from start import Inventory
@@ -33,9 +34,11 @@ def get_current_config(task):
     
 # To fix sections without duplicate code 
 # Maybe work on config replace (makes config clean?!)
-results = nr.run(task=generate_config_and_push, part='interfaces')
-print_result(results)
-results = nr.run(task=generate_config_and_push, part='ospf')
-print_result(results)
-results = nr.run(task=generate_config_and_push, part='mpls')
+#results = nr.run(task=generate_config_and_push, part='defaults')
+#print_result(results)
+#results = nr.run(task=generate_config_and_push, part='ospf')
+#print_result(results)
+#results = nr.filter(F(groups__contains='core_routing') & F(platform='iosxr')).run(task=generate_config_and_push, part='defaults')
+#print_result(results)
+results = nr.filter(F(groups__contains='core_routing')).run(task=generate_config_and_push, part='bgp')
 print_result(results)

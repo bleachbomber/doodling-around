@@ -92,9 +92,31 @@ PR1:
   platform: ios
   groups:
     - core
-    - core-routing
+    - core_routing
   data:
     routing:
+      bgp:
+        neighbors:
+          - ip_address: 192.168.0.1
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
+          - ip_address: 192.168.0.2
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
+          - ip_address: 192.168.0.3
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
+          - ip_address: 192.168.0.4
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
       ospf:
         interfaces:
           Loopback0:
@@ -150,9 +172,16 @@ R1:
   platform: iosxr
   groups:
     - edge
-    - core-routing
+    - core_routing
   data:
     routing:
+      bgp:
+        neighbors:
+          - ip_address: 192.168.0.10
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
       ospf:
         interfaces:
           Loopback0:
@@ -214,9 +243,16 @@ R2:
   platform: iosxr
   groups:
     - edge
-    - core-routing
+    - core_routing
   data:
     routing:
+      bgp:
+        neighbors:
+          - ip_address: 192.168.0.10
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
       ospf:
         interfaces:
           Loopback0:
@@ -273,9 +309,16 @@ R3:
   platform: iosxr
   groups:
     - edge
-    - core-routing
+    - core_routing
   data:
     routing:
+      bgp:
+        neighbors:
+          - ip_address: 192.168.0.10
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
       ospf:
         interfaces:
           Loopback0:
@@ -328,9 +371,16 @@ R4:
   platform: iosxr
   groups:
     - edge
-    - core-routing
+    - core_routing
   data:
     routing:
+      bgp:
+        neighbors:
+          - ip_address: 192.168.0.10
+            address_families:
+              - id: l2vpn
+                subsequent_address_families:
+                  - id: evpn
       ospf:
         interfaces:
           Loopback0:

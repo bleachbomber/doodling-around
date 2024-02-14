@@ -3,21 +3,21 @@
 {% if group.name == 'core_routing' %}
 router bgp {{ group.data.asn }}
  bgp router-id {{ host.data.interfaces['Loopback0'].ip_address | ip_address }}
- neighbor core peer-group
- neighbor core remote-as {{ group.data.asn }}
- neighbor core update-source Loopback0
- !
 {% for neighbor in host.data.routing.bgp.neighbors %}
 {% for afi in neighbor.address_families %}
 {% for safi in afi.subsequent_address_families %}
- address-family {{ afi.id }} {{ safi.id }} 
-  neighbor core send-community both
-  neighbor core route-reflector-client
-  neighbor {{ neighbor.ip_address }} activate
- exit-address-family
+ address-family {{ afi.id }} {{ safi.id }}
+ !
+ neighbor {{ neighbor.ip_address }}
+  remote-as {{ group.data.asn }}
+  update-source Loopback0
+  address-family {{ afi.id }} {{ safi.id }}
+  !
+ !
 {% endfor %}
 {% endfor %}
 {% endfor %}
+!
 {% endif %}
 {% endfor %}
 {% endif %}

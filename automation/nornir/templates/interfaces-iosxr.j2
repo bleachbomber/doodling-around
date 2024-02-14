@@ -10,10 +10,10 @@ interface {{ interface }}
  ipv6 address {{ host.data.interfaces[interface].ip_address }}
 {% endif %}
 {% if host.data.interfaces[interface].type == 'core' %}
- no shutdown
  lldp
   enable
  !
 {% endif %}
+ no shutdown
 !
 {% endfor %}

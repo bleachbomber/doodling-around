@@ -1,5 +1,5 @@
 ---
-core-routing:
+core_routing:
   data:
     asn: 64512
 core:
